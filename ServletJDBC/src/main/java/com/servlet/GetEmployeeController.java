@@ -8,26 +8,27 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.servlet.dao.InsertEmployeeDao;
-import com.servlet.model.InsertEmployee;
-
 public class GetEmployeeController extends HttpServlet {
 	
 	private static final long serialVersionUID = 1L;
 
 	protected void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
-		int EmpId = Integer.parseInt(req.getParameter("EmpId"));
-		String Name = req.getParameter("Name");
-		int Age = Integer.parseInt(req.getParameter("Age"));
+		int menu = Integer.parseInt(req.getParameter("menu"));
 		
-		InsertEmployeeDao dao = new InsertEmployeeDao();
-		InsertEmployee i1 = dao.getInsertEmployee(EmpId, Name, Age);
+		if( menu == 1 ) {
+			RequestDispatcher rd = req.getRequestDispatcher("Insert.jsp");
+			rd.forward(req, res); 
+		}
 		
-		req.setAttribute("InsertEmployee", i1);
+		else if ( menu == 2 ) {
+			RequestDispatcher rd = req.getRequestDispatcher("Update.jsp");
+			rd.forward(req, res); 
+		}
 		
-		RequestDispatcher rd = req.getRequestDispatcher("showInsertEmployee.jsp");
-		rd.forward(req, res); 
-		
+		else if ( menu == 3) {
+			RequestDispatcher rd = req.getRequestDispatcher("Delete.jsp");
+			rd.forward(req, res); 
+		}
 		
 	}
 

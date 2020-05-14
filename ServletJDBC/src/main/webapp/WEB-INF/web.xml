@@ -1,3 +1,4 @@
+ 
 <!DOCTYPE web-app PUBLIC
  "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
  "http://java.sun.com/dtd/web-app_2_3.dtd" >
@@ -12,6 +13,47 @@
   </servlet>
   <servlet-mapping>
   	<servlet-name>GetEmployeeController</servlet-name>
-  	<url-pattern>/getInsertEmployee</url-pattern>
+  	<url-pattern>/getOption</url-pattern>
+  </servlet-mapping>
+ 
+  <display-name>Archetype Created Web Application</display-name> 
+  <servlet>
+  	<servlet-name>InsertEmployee</servlet-name>
+  	<display-name>InsertEmployee</display-name>
+  	<description></description>
+  	<servlet-class>com.servlet.InsertEmployee</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>InsertEmployee</servlet-name>
+  	<url-pattern>/getInsEmployee</url-pattern>
+  </servlet-mapping>
+  
+  <display-name>Archetype Created Web Application</display-name> 
+  <servlet>
+  	<servlet-name>UpdateEmployee</servlet-name>
+  	<display-name>UpdateEmployee</display-name>
+  	<description></description>
+  	<servlet-class>com.servlet.UpdateEmployee</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>UpdateEmployee</servlet-name>
+  	<url-pattern>/getUpdEmployee</url-pattern>
+  </servlet-mapping>
+  
+    <display-name>Archetype Created Web Application</display-name> 
+  <servlet>
+  	<servlet-name>DeleteEmployee</servlet-name>
+  	<display-name>DeleteEmployee</display-name>
+  	<description></description>
+  	<servlet-class>com.servlet.DeleteEmployee</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>DeleteEmployee</servlet-name>
+  	<url-pattern>/delEmployee</url-pattern>
   </servlet-mapping>
 </web-app>
+
+
+
+
+
