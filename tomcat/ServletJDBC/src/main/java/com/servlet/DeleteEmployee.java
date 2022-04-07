@@ -8,25 +8,23 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.servlet.dao.InsertEmployeeDao;
-import com.servlet.model.InsEmployee;
+import com.servlet.dao.DeleteEmployeeDao;
+import com.servlet.model.DelEmployee;
 
-public class InsertEmployee extends HttpServlet {
-
-	private static final long serialVersionUID = 1L;
-
+public class DeleteEmployee extends HttpServlet {
+	static final long serialVersionUID = 1L;
+	
 	protected void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
 		
 		int EmpId = Integer.parseInt(req.getParameter("EmpId"));
 		String Name = req.getParameter("Name");
-		int Salary = Integer.parseInt(req.getParameter("Salary"));
+		
+		DeleteEmployeeDao dao = new DeleteEmployeeDao();
+		DelEmployee i1 = dao.delEmployee(EmpId, Name);
 	
-		InsertEmployeeDao dao = new InsertEmployeeDao();
-		InsEmployee i1 = dao.getInsEmployee(EmpId, Name, Salary);
+		req.setAttribute("DelEmployee", i1);
 	
-		req.setAttribute("InsEmployee", i1);
-	
-		RequestDispatcher rd = req.getRequestDispatcher("showInsEmployee.jsp");
+		RequestDispatcher rd = req.getRequestDispatcher("showDelEmployee.jsp");
 		rd.forward(req, res); 
 	}
 }

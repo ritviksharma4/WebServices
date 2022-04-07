@@ -1,4 +1,4 @@
-<%@page import="com.servlet.model.InsertEmployee"%>
+<%@page import="com.servlet.model.UpdEmployee"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -11,9 +11,9 @@
 	
 	<%
 	
-		InsertEmployee i1 = (InsertEmployee)request.getAttribute("InsertEmployee");
+		UpdEmployee e1 = (UpdEmployee)request.getAttribute("UpdEmployee");
 	
-		out.println(i1);
+		out.println(e1);
 	
 	%>
 

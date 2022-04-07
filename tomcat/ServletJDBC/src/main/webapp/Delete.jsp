@@ -4,20 +4,18 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Update Employee</title>
+<title>Delete Employee</title>
 </head>
 <body>
  	 	
- 	<form action = 'getUpdEmployee'>
+ 	<form action = 'delEmployee'>
  	
-	 	<h1>Enter Employee Details to be Updated...</h1>	
-		
-		Enter Employee Id : <input type = "text" name = "EmpId"><br><br>
+	 	<h1>Enter details of the Employee who has to be Removed...</h1>	
 	
+		<br><br>Enter Employee Id : <input type = "text" name = "EmpId"><br><br>
+		
 		Enter Employee Name : <input type = "text" name = "Name"><br><br>
 	
-		Enter Employee Salary : <input type = "text" name = "Salary"><br><br>
- 	
  		<input type = "Submit">
  		
  	</form>

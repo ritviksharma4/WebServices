@@ -1,13 +1,17 @@
 <html>
 <body>
-<h2>Hello World!</h2>
-	<form action = 'getInsertEmployee'>
-		Enter Employee Id : <input type = "text" name = "EmpId"><br><br>
+<h1>Hello User! Choose an Option Number.</h1>
+<h2>1. Insert Employee</h2>
+<h2>2. Update Employee</h2>
+<h2>3. Remove Employee</h2>
+
+	<form action = 'getOption'>
+	
+		Enter Option : <input type = "text" name = "menu"><br><br>
 		
-		Enter Employee Name : <input type = "text" name = "Name"><br><br>
-		
-		Enter Employee Age : <input type = "text" name = "Age"><br><br>
 		<input type = "submit">
+		
 	</form>
+		
 </body>
 </html>

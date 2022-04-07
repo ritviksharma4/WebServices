@@ -1,9 +1,9 @@
 package com.servlet.model;
 
-public class InsertEmployee {
+public class InsEmployee {
 	private int EmpId;
 	private String Name;
-	private int Age;
+	private int Salary;
 	
 	public int getEmpId() {
 		return EmpId;
@@ -17,11 +17,11 @@ public class InsertEmployee {
 	public void setName(String Name) {
 		this.Name = Name;
 	}
-	public int getAge() {
-		return Age;
+	public int getSalary() {
+		return Salary;
 	}
-	public void setAge(int Age) {
-		this.Age = Age;
+	public void setSalary(int Salary) {
+		this.Salary = Salary;
 	}
 	
 	@Override
