@@ -25,8 +25,12 @@ public class GetEmployeeController extends HttpServlet {
 			rd.forward(req, res); 
 		}
 		
-		else if ( menu == 3) {
+		else if ( menu == 3 ) {
 			RequestDispatcher rd = req.getRequestDispatcher("Delete.jsp");
+			rd.forward(req, res); 
+		}
+		else if ( menu == 4 ) {
+			RequestDispatcher rd = req.getRequestDispatcher("FetchDetails.jsp");
 			rd.forward(req, res); 
 		}
 		

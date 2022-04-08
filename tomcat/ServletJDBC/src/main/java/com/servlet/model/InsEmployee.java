@@ -4,6 +4,7 @@ public class InsEmployee {
 	private int EmpId;
 	private String Name;
 	private int Salary;
+	private int DeptId;
 	
 	public int getEmpId() {
 		return EmpId;
@@ -22,6 +23,12 @@ public class InsEmployee {
 	}
 	public void setSalary(int Salary) {
 		this.Salary = Salary;
+	}
+	public int getDeptId() {
+		return DeptId;
+	}
+	public void setDeptId(int DeptId) {
+		this.DeptId = DeptId;
 	}
 	
 	@Override

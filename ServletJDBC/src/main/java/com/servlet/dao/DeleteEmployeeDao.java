@@ -11,7 +11,7 @@ public class DeleteEmployeeDao {
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/EmployeeManagement","root","Kind@1212");
-			PreparedStatement ps = con.prepareStatement("DELETE FROM employee_management WHERE EmpId = '"+EmpId+"' AND Name like '"+Name+"' ");
+			PreparedStatement ps = con.prepareStatement("DELETE FROM employee_management WHERE EmpId = '"+EmpId+"' AND Name = '"+Name+"' ");
 			
 			ps.executeUpdate();
 		} catch(Exception e) {

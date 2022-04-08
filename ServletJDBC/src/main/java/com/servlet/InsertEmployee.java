@@ -20,9 +20,10 @@ public class InsertEmployee extends HttpServlet {
 		int EmpId = Integer.parseInt(req.getParameter("EmpId"));
 		String Name = req.getParameter("Name");
 		int Salary = Integer.parseInt(req.getParameter("Salary"));
+		int DeptId = Integer.parseInt(req.getParameter("DeptId"));
 	
 		InsertEmployeeDao dao = new InsertEmployeeDao();
-		InsEmployee i1 = dao.getInsEmployee(EmpId, Name, Salary);
+		InsEmployee i1 = dao.getInsEmployee(EmpId, Name, Salary, DeptId);
 	
 		req.setAttribute("InsEmployee", i1);
 	

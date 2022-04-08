@@ -17,10 +17,17 @@
 		Enter Employee Name : <input type = "text" name = "Name"><br><br>
 	
 		Enter Employee Salary : <input type = "text" name = "Salary"><br><br>
+		
+		Enter Employee Department Id : <input type = "text" name = "DeptId"><br><br>
  	
  		<input type = "Submit">
  		
  	</form>
- 	
+ 	<TABLE>
+			<TR>
+			<TD><FORM ACTION="index.jsp" method="get" >
+			<button type="submit"><-- Back</button></TD>
+			</TR>
+	</TABLE>
 </body>
 </html>

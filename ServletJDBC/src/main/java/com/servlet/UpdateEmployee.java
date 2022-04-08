@@ -19,9 +19,10 @@ public class UpdateEmployee extends HttpServlet {
 		int EmpId = Integer.parseInt(req.getParameter("EmpId"));
 		String Name = req.getParameter("Name");
 		int Salary = Integer.parseInt(req.getParameter("Salary"));
+		int DeptId = Integer.parseInt(req.getParameter("DeptId"));
 	
 		UpdateEmployeeDao dao = new UpdateEmployeeDao();
-		UpdEmployee i1 = dao.getUpdEmployee(EmpId, Name, Salary);
+		UpdEmployee i1 = dao.getUpdEmployee(EmpId, Name, Salary, DeptId);
 	
 		req.setAttribute("UpdEmployee", i1);
 	

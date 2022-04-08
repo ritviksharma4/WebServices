@@ -19,6 +19,11 @@
  		<input type = "Submit">
  		
  	</form>
- 	
+ 	<TABLE>
+			<TR>
+			<TD><FORM ACTION="index.jsp" method="get" >
+			<button type="submit"><-- Back</button></TD>
+			</TR>
+	</TABLE>
 </body>
 </html>

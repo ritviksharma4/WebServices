@@ -4,6 +4,7 @@ public class UpdEmployee {
 	private int EmpId;
 	private String Name;
 	private int Salary;
+	private int DeptId;
 	
 	public int getEmpId() {
 		return EmpId;
@@ -23,10 +24,16 @@ public class UpdEmployee {
 	public void setAge(int Salary) {
 		this.Salary = Salary;
 	}
+	public int getDeptId() {
+		return DeptId;
+	}
+	public void setDeptId(int DeptId) {
+		this.DeptId = DeptId;
+	}
 	
 	@Override
 	public String toString() {
-		return "Employee's Salary Updated! ";
+		return "Employee's Salary and Department Id Updated! ";
 	}
 
 }
